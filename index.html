@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Justin Hong by abigsmall</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Justin Hong</h1>
+        <p>personal website for Justin Hong</p>
+
+
+        <p class="view"><a href="https://github.com/abigsmall">View My GitHub Profile</a></p>
+
+      </header>
+      <section>
+        <h3>
+<a id="welcome-to-my-personal-website" class="anchor" href="#welcome-to-my-personal-website" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to my personal website!</h3>
+
+<p>Hi. I’m Justin Hong, a Los Angeles-based software engineer.</p>
+
+<h1>
+<a id="things-that-have-tripped-me-up-while-writing-javascript" class="anchor" href="#things-that-have-tripped-me-up-while-writing-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things that have tripped me up while writing JavaScript</h1>
+
+<p>Some common mistakes I’ve made that could’ve been relatively easily avoided.</p>
+
+<p>Many of these would probably not be a problem if I changed the settings in the text editor that I use. Actually, a better blog post than this one would be highlighting useful text editor settings/plug-ins. But I have a deadline so ¯\_(ツ)_/¯.</p>
+
+<h2>
+<a id="not-saving-your-files" class="anchor" href="#not-saving-your-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Not saving your files</h2>
+
+<p>You make some changes to your code, refresh your browser or run the code in your terminal or wherever, and then... nothing. Nothing changes. ?!?!? You look over your code again, furiously, scanning over each line, character by character. After having looked over your code for the umpteenth time, all you’re left with is a satisfaction at your code’s pristine logic and an intense bewilderment at why your code’s beauty is not being represented in the real world. After several minutes of this, you realize that you didn’t save your changes. Yeah, so save your changes.</p>
+
+<h2>
+<a id="forgetting-a-return-statement" class="anchor" href="#forgetting-a-return-statement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Forgetting a <code>return</code> statement</h2>
+
+<p>Console doesn’t show any errors and yet I don’t see what I expect. Could be a case of simply forgetting a <code>return</code> statement.</p>
+
+<p>Let’s say the below code is in a function, and <code>anotherFunction</code> is a function that returns something. To be more specific, <code>anotherFunction</code> is a pure function that returns a value and doesn’t have a side effect. That is, the entire purpose of using <code>anotherFunction</code> is to return the value that it returns:</p>
+
+<pre><code>if (something) {
+   anotherFunction();
+}
+</code></pre>
+
+<p>Yet we forgot to return <code>anotherFunction</code>’s value!</p>
+
+<pre><code>if (something) {
+  return anotherFunction();
+}
+</code></pre>
+
+<p>Ahh, much better. I’m not sure if linters can check for this. It would do me some good to do some research. I’ll do some later.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
