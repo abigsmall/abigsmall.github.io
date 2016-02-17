@@ -7,7 +7,7 @@
 
 # Site settings
 title: Justin Hong
-email: @gmail
+# email: 
 description: > # this means to ignore newlines until "baseurl:"
   Welcome! I’m Justin Hong, a Los Angeles-based software engineer. 
   This is my programming-related website.
