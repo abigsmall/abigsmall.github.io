@@ -3,6 +3,7 @@ layout: post
 title:  "Things that have tripped me up while writing JavaScript"
 date:   2015-09-17 09:06:46:00 -0800
 categories: javascript
+---
 Some common mistakes I’ve made that could’ve been relatively easily avoided.
 
 Many of these would probably not be a problem if I changed the settings in the text editor that I use. Actually, a better blog post than this one would be highlighting useful text editor settings/plug-ins. But I have a deadline so ¯\\\\\\_(ツ)\\_/¯.
