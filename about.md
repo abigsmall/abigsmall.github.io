@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+My name is Justin Hong, a full-stack software engineer currently based in Los Angeles. I’m actively tweaking this website, having just moved it over from an automatically-generated GitHub Pages site to one whose source has proper Jekyll and Octopress underpinnings.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I’ll be writing about my struggles, accomplishments, and general thoughts regarding web development. I plan on getting out of this default Jekyll theme as well. Exciting!
