@@ -7,9 +7,9 @@
 
 # Site settings
 title: Justin Hong
-email: `same as my GitHub username`@gmail
+email: (same as my GitHub username)@gmail
 description: > # this means to ignore newlines until "baseurl:"
-  a programming-related website for Justin Hong. Welcome! I&rsoquo;m 
+  a programming-related website for Justin Hong. Welcome! I am 
   Justin Hong, a Los Angeles-based software engineer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abigsmall.github.io" # the base hostname & protocol for your site
