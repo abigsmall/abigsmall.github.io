@@ -27,4 +27,4 @@ if (something) {
   return anotherFunction();
 }
 ```
-Ahh, much better. I’m not sure if linters can check for this. It would do me some good to do some research. I’ll do some later."
+Ahh, much better. I’m not sure if linters can check for this. It would do me some good to do some research. I’ll do some later.
