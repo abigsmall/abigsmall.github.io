@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Justin Hong</title>
-  <meta name="description" content="Welcome! I’m Justin Hong, a Los Angeles-based software engineer.  This is my programming-related website.
-">
+  <title>Things that have tripped me up while writing JavaScript</title>
+  <meta name="description" content="Some common mistakes I’ve made that could’ve been relatively easily avoided.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://abigsmall.github.io/">
+  <link rel="canonical" href="https://abigsmall.github.io/javascript/2015/09/17/things-that-have-tripped-me-up-while-writing-javascript.html">
   <link rel="alternate" type="application/rss+xml" title="Justin Hong" href="https://abigsmall.github.io/feed.xml">
 </head>
 
@@ -55,33 +54,42 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Things that have tripped me up while writing JavaScript</h1>
+    <p class="post-meta"><time datetime="2015-09-17T09:06:46-07:00" itemprop="datePublished">Sep 17, 2015</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Feb 19, 2016</span>
+  <div class="post-content" itemprop="articleBody">
+    <p>Some common mistakes I’ve made that could’ve been relatively easily avoided.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/02/19/podcasts-and-productivity.html">Podcasts and Productivity</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 17, 2015</span>
+<p>Many of these would probably not be a problem if I changed the settings in the text editor that I use. Actually, a better blog post than this one would be highlighting useful text editor settings/plug-ins. But I have a deadline so ¯\_(ツ)_/¯.</p>
 
-        <h2>
-          <a class="post-link" href="/javascript/2015/09/17/things-that-have-tripped-me-up-while-writing-javascript.html">Things that have tripped me up while writing JavaScript</a>
-        </h2>
-      </li>
-    
-  </ul>
+<h2 id="not-saving-your-files">Not saving your files</h2>
+<p>You make some changes to your code, refresh your browser or run the code in your terminal or wherever, and then… nothing. Nothing changes. ?!?!? You look over your code again, furiously, scanning over each line, character by character. After having looked over your code for the umpteenth time, all you’re left with is a satisfaction at your code’s pristine logic and an intense bewilderment at why your code’s beauty is not being represented in the real world. After several minutes of this, you realize that you didn’t save your changes. Yeah, so save your changes.</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<h2 id="forgetting-a-return-statement">Forgetting a <code class="highlighter-rouge">return</code> statement</h2>
+<p>Console doesn’t show any errors and yet I don’t see what I expect. Could be a case of simply forgetting a <code class="highlighter-rouge">return</code> statement.</p>
 
-</div>
+<p>Let’s say the below code is in a function, and <code class="highlighter-rouge">anotherFunction</code> is a function that returns something. To be more specific, <code class="highlighter-rouge">anotherFunction</code> is a pure function that returns a value and doesn’t have a side effect. That is, the entire purpose of using <code class="highlighter-rouge">anotherFunction</code> is to return the value that it returns:
+<code class="highlighter-rouge">
+if (something) {
+   anotherFunction();
+ }
+</code>
+Yet we forgot to return <code class="highlighter-rouge">anotherFunction</code>’s value!</p>
+
+<p><code class="highlighter-rouge">
+if (something) {
+  return anotherFunction();
+}
+</code>
+Ahh, much better. I’m not sure if linters can check for this. It would do me some good to do some research. I’ll do some later.</p>
+
+  </div>
+
+</article>
 
       </div>
     </div>
